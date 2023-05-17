@@ -15,3 +15,28 @@ function checkCookies(){
 	})
 }
 checkCookies();
+
+const handleSubmit = (event) => {
+	event.preventDefault();
+
+	const myForm = event.target;
+	const formData = new FormData(myForm);
+
+	console.log('work')
+
+	fetch("/", {
+		method: "POST",
+		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+		body: new URLSearchParams(formData).toString(),
+	})
+		.then(() => {
+			console.log("Form successfully submitted")
+			document.querySelector('.close-contact-us-form').click()
+			document.querySelector('.contact-us-tel').value = ''
+		})
+		.catch((error) => alert(error));
+};
+
+document
+	.querySelector(".contact-us-form")
+	.addEventListener("submit", handleSubmit);
