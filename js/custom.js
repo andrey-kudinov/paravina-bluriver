@@ -32,6 +32,7 @@ const handleSubmit = (event) => {
 		.then(() => {
 			console.log("Form successfully submitted")
 			document.querySelector('.close-contact-us-form').click()
+			document.querySelector('.contact-us-tel').value = ''
 		})
 		.catch((error) => alert(error));
 };
