@@ -1,7 +1,7 @@
 <?php
 
 /* SETTINGS */
-$recipient = "zayavka.paravina@gmail.com";
+$recipient = "paravinaza@yandex.com";
 $subject = "Новая заявка с сайта paravina.ru от";
 
 if($_POST){
