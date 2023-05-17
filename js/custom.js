@@ -29,7 +29,10 @@ const handleSubmit = (event) => {
 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
 		body: new URLSearchParams(formData).toString(),
 	})
-		.then(() => console.log("Form successfully submitted"))
+		.then(() => {
+			console.log("Form successfully submitted")
+			document.querySelector('.close-contact-us-form').click()
+		})
 		.catch((error) => alert(error));
 };
 
