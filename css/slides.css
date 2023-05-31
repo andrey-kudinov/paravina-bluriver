@@ -1117,6 +1117,7 @@ img.rounded {
 }
 
 .fade-7 .content {
+  display: none;
   background: rgba(42, 43, 44, 0.7);
 }
 
