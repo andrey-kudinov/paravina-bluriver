@@ -1,0 +1,24 @@
+{
+  "name": "paravina.bluriver.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrey-kudinov/paravina-bluriver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrey-kudinov/paravina-bluriver/issues"
+  },
+  "homepage": "https://github.com/andrey-kudinov/paravina-bluriver#readme",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
+}
